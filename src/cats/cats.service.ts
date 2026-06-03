@@ -16,6 +16,11 @@ export class CatsService {
         return this.cats;
     }
 
+    //obtener cat por id
+    getCat(id: number) : Cat | undefined{
+        return this.cats.find((item) => item.id === id);
+    }
+
 
 
 }
